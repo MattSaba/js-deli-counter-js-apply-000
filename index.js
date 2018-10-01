@@ -1,6 +1,8 @@
 
 function takeANumber(line) {
   
+  a = [1, 2, 3, 4, 5, 6, 7];
+  
   line.push(name);
   
   var x = line.lastIndexOf(name);
