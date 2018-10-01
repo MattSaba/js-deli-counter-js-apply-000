@@ -1,5 +1,5 @@
 
-function takeANumber(line, name) {
+function takeANumber(line) {
   
   line.push(name);
   
@@ -9,7 +9,7 @@ function takeANumber(line, name) {
   
 }
 
-function nowServing(katzDeliLine) {
+function nowServing(katzDeliLine) { //["Jake", "Bill", "Alice"]
   // the variable x works on line 18 because shift has an automatic return of what it cut out.
   var x = katzDeliLine.shift();
   if (katzDeliLine.length === 0) {
@@ -19,7 +19,10 @@ function nowServing(katzDeliLine) {
   }
 }
 
-takeANumber([], 'Alice')  // 
+takeANumber(["Jake", "Bill"], 'Alice') // line looks likes ["Jake", "Bill", "Alice"]
+line = ["Jake", "Bill", "Alice"]
+nowServing(line)
+
 
 
 // return the first person in line
