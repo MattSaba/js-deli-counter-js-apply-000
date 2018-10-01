@@ -1,15 +1,24 @@
 
 function takeANumber(line) {
+  counter = 1; 
+  a = counter + 1; 
   
-  a = [1, 2, 3, 4, 5, 6, 7];
-  
-  line.push(name);
+  line.push(a);
   
   var x = line.lastIndexOf(name);
   var y = x + 1;
   return("Welcome, " + name + "." + " You are number " + y + " in line.");
   
 }
+
+line = []
+takeANumber(line) // line = [1]
+
+takeANumber(line) // line = [1, 2]
+
+nowServing(line) // line = [2]
+
+takeANumber(line) // line = [2, 3]
 
 function nowServing(katzDeliLine) { //["Jake", "Bill", "Alice"]
   // the variable x works on line 18 because shift has an automatic return of what it cut out.
