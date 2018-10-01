@@ -1,11 +1,11 @@
 
-function takeANumber(people_in_line, new_person_name) {
+function takeANumber(line, name) {
   
-  people_in_line.push(new_person_name);
+  line.push(name);
   
-  var x = people_in_line.lastIndexOf(new_person_name);
+  var x = line.lastIndexOf(name);
   var y = x + 1;
-  return("Welcome, " + new_person_name + "." + " You are number " + y + " in line.");
+  return("Welcome, " + name + "." + " You are number " + y + " in line.");
   
 }
 
@@ -18,6 +18,8 @@ function nowServing(katzDeliLine) {
     return "Currently serving " + x + ".";
   }
 }
+
+takeANumber([], 'Alice')  // 
 
 
 // return the first person in line
