@@ -1,6 +1,6 @@
 
 function takeANumber(line) {
-  var counter = 1; 
+  var counter = 0; 
   var a = counter + 1; 
   
   line.push(a);
