@@ -2,9 +2,9 @@ var counter = 0;
 
 function takeANumber(line) {
  
-  var a = counter + 1; 
+  counter = counter + 1; 
   
-  line.push(a);
+  line.push(counter);
   
 
   return("Welcome, you are number " + a );
