@@ -5,9 +5,8 @@ function takeANumber(line) {
   
   line.push(a);
   
-  var x = line.lastIndexOf(name);
-  var y = x + 1;
-  return("Welcome, " + name + "." + " You are number " + y + " in line.");
+
+  return("Welcome, you are number " + a );
   
 }
 
